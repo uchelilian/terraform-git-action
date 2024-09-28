@@ -12,7 +12,8 @@ terraform {
     }
   }
 }
-
+variable "aws_access_key_id" {}
+variable "aws_secret_access_key" {}
 # Configure the AWS Provider
 provider "aws" {
   region = "us-east-1" # define region as per your account
