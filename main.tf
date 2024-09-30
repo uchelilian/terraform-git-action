@@ -12,8 +12,8 @@ provider "aws" {
   region = "us-east-1" # define region as per your account
 }
 
-resource "aws_s3_bucket" "git-action-demo-bucket" {
-  bucket = "demo-github-action-tf-medium"
+resource "aws_s3_bucket" "new-bucket" {
+  bucket = "git-action-demo-bucket"
 
   object_lock_enabled = false
 
